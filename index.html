@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack 21</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+    <h1>Blackjack 21</h1>
+    <p id="message-el"> <span style="font-size: 26px">Do you want to play a round?</span> <br><br>
+        Blackjack - you win 100$ <br><br>
+        Out of the game - you lose 20$ <br><br>
+        Fold - you lose 5$</p>
+    <p id="cards-el"></p>
+    <p id="sum-el"></p>
+    <div id="buttons">
+        <button onclick="startNewGame()" id="startGameButton">START NEW GAME</button>
+        <button onclick="nextDeal()" id="nextDealButton">NEXT DEAL</button>
+        <button onclick="newCard()" id="newCardButton">NEW CARD</button>
+        <button onclick="fold()" id="foldButton">FOLD</button>
+    </div>
+    <p id="player-el"></p>
+    <div>
+    <script src="index.js"></script>
+</body>
+
+</html>

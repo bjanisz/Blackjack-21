@@ -1,15 +1,11 @@
 let items = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 let firstCard = 0;
-
 let secondCard = 0;
-
 let sum = 0;
 
 let hasBlackjack = false;
-
 let isAlive = false;
-
 let isStartGameAlive = true;
 
 let message = "";
@@ -45,7 +41,7 @@ function startNewGame() {
 
   player.name = prompt("Enter your name");
 
-  if (isStartGameAlive === true && player.name !== '' && player.name !== null) {
+  if (isStartGameAlive && player.name !== '') {
     playerEl.textContent =
       "Player: " + player.name + " Chips: " + player.chips + "$";
 
@@ -107,7 +103,7 @@ function renderGame() {
 }
 
 function newCard() {
-  if (isAlive === true && hasBlackjack === false) {
+  if (isAlive && !hasBlackjack) {
     let card = items[Math.floor(Math.random() * (items.length - 1))];
     sum += card;
     cards.push(card);
